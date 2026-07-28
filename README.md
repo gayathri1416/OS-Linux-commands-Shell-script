@@ -43,7 +43,7 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-![output_1](./img/output1.png)
+![output_1](./img/ouput1.png)
 
 
 
