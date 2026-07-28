@@ -41,7 +41,7 @@ s.n. dasgupta
 ```
 ### Display the content of the files
 cat < file1
-## OUTPUT
+
 
 ![output_1](./img/ouput1.png)
 
