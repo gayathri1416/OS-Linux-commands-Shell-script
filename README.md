@@ -42,26 +42,25 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 
-
-![output_1](./img/ouput1.png)
-
+## OUTPUT 
+![output_1](./img/output_1.png)
 
 
 cat < file2
 ## OUTPUT
-
+![output_1](./img/o2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![output_1](./img/o3.png)
 comm file1 file2
  ## OUTPUT
-
+![output_1](./img/o4.png)
  
 diff file1 file2
 ## OUTPUT
-
+![output_1](./img/o5.png)
 
 #Filters
 
