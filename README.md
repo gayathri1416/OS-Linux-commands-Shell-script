@@ -43,25 +43,25 @@ s.n. dasgupta
 cat < file1
 
 ## OUTPUT 
-![output_1](./img/output_1.png)
+![output](./img/output_1.png)
 
 
 cat < file2
 ## OUTPUT
-![output_1](./img/o2.png)
+![output](./img/o2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- ![output_1](./img/o3.png)
+ ![output](./img/o3.png)
 comm file1 file2
  ## OUTPUT
-![output_1](./img/o4.png)
+![output](./img/o4.png)
  
 diff file1 file2
 
 ## OUTPUT
-![output_1](./img/o5.png)
+![output](./img/o5.png)
 
 #Filters
 
@@ -85,17 +85,17 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-![output_1](./img/o6.png)
+![output](./img/o6.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-![output_1](./img/o7.png)
+![output](./img/o7.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![output_1](./img/o8.png)
+![output](./img/o8.png)
 
 cat < newfile 
 ```
@@ -110,40 +110,40 @@ hello world
 grep Hello newfile
 
 ## OUTPUT
-![output_1](./img/o9.png)
+![output](./img/o9.png)
 
 
 grep hello newfile 
 ## OUTPUT
 
-![output_1](./img/o10.png)
+![output](./img/o10.png)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-![output_1](./img/o11.png)
+![output](./img/o11.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-![output_1](./img/o12.png)
+![output](./img/o12.png)
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-![output_1](./img/o13.png)
+![output](./img/o13.png)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-![output_1](./img/o14.png)
+![output](./img/o14.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-![output_1](./img/o15.png)
+![output](./img/o15.png)
 
 cat < newfile 
 ```
@@ -166,61 +166,61 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-![output_1](./img/o16.png)
+![output](./img/o16.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-![output_1](./img/o17.png)
+![output](./img/o17.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-![output_1](./img/o18.png)
+![output](./img/o18.png)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-![output_1](./img/o19.png)
+![output](./img/o19.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
-![output_1](./img/o20.png)
+![output](./img/o20.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-![output_1](./img/o21.png)
+![output](./img/o21.png)
 
 egrep '((W|w)orld$)'  
 ## OUTPUT
 
-![output_1](./img/o22.png)
+![output](./img/o22.png)
 
 egrep '[1-9]' newfile               
 ## OUTPUT
 
-![output_1](./img/o23.png)
+![output](./img/o23.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-![output_1](./img/o24.png)
+![output](./img/o24.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-![output_1](./img/o25.png)
+![output](./img/o25.png)
 
 egrep l{2} newfile
 ## OUTPUT
 
-![output_1](./img/o26.png)
+![output](./img/o26.png)
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
-![output_1](./img/o27.png)
+![output](./img/o27.png)
 cat > file23
 ```
 1001 | Ram | 10000 | HR
@@ -238,81 +238,81 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-![output_1](./img/o28.png)
+![output](./img/o28.png)
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-![output_1](./img/o29.png)
+![output](./img/o29.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-![output_1](./img/o30.png)
+![output](./img/o30.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-![output_1](./img/o31.png)
+![output](./img/o31.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-![output_1](./img/o32.png)
+![output](./img/o32.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-![output_1](./img/o33.png)
+![output](./img/o33.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-![output_1](./img/o34.png)
+![output](./img/o34.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-![output_1](./img/o35.png)
+![output](./img/o35.png)
 
 seq 10 
 ## OUTPUT
 
-![output_1](./img/o36.png)
+![output](./img/o36.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-![output_1](./img/o37.png)
+![output](./img/o37.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-![output_1](./img/o38.png)
+![output](./img/o38.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-![output_1](./img/o39.png)
+![output](./img/o39.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-![output_1](./img/o40.png)
+![output](./img/o40.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
-![output_1](./img/o41.png)
+![output](./img/o41.png)
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-![output_1](./img/o42.png)
+![output](./img/o42.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23   
 
-![output_1](./img/o43.png)
+![output](./img/o43.png)
 #Sorting File content
 cat > file21
 ```
@@ -324,7 +324,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![output_1](./img/o44.png)
+![output](./img/o44.png)
 
 cat > file22
 ```
@@ -338,13 +338,13 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-![output_1](./img/o45.png)
+![output](./img/o45.png)
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![output_1](./img/o46.png)
+![output](./img/o46.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -360,19 +360,19 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![output_1](./img/o66.png)
+![output](./img/o66.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![output_1](./img/o47.png)
+![output](./img/o47.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
 
-![output_1](./img/o48.png)
+![output](./img/o48.png)
 mkdir backupdir
  
 mv backup.tar backupdir
@@ -381,19 +381,19 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![output_1](./img/o49.png)
+![output](./img/o49.png)
 
 tar -xvf backup.tar
 ## OUTPUT
-![output_1](./img/o50.png)
+![output](./img/o50.png)
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- ![output_1](./img/o51.png)
+ ![output](./img/o51.png)
 gunzip backup.tar.gz                 
 ## OUTPUT
-![output_1](./img/o52.png)
+![output](./img/o52.png)
  
 # Shell Script
 ```
@@ -403,7 +403,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![output_1](./img/o53.png)
+![output](./img/o53.png)
 
  
 cat << stop > herecheck.txt
@@ -417,7 +417,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
-![output_1](./img/o54.png)
+![output](./img/o54.png)
 cat < scriptest.sh 
 ```bash
 \#!/bin/sh
@@ -454,25 +454,25 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![output_1](./img/o55.png)
+![output](./img/o55.png)
  
 ls file1
 ## OUTPUT
-![output_1](./img/o56.png)
+![output](./img/o56.png)
 echo $?
 ## OUTPUT 
 ./one
 bash: ./one: Permission denied
- ![output_1](./img/o57.png)
+ ![output](./img/o57.png)
 echo $?
 ## OUTPUT 
- ![output_1](./img/o58.png)
+ ![output](./img/o58.png)
 abcd
  
 echo $?
  ## OUTPUT
 
-![output_1](./img/o59.png)
+![output](./img/o59.png)
  
 # mis-using string comparisons
 
@@ -504,14 +504,14 @@ fi
 ```
 ##OUTPUT
 
-![output_1](./img/o60.png)
+![output](./img/o60.png)
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
 
-![output_1](./img/o61.png)
+![output](./img/o61.png)
 # check file ownership
 cat < psswdperm.sh 
 ```bash
@@ -537,8 +537,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![output_1](./img/o62.png)
-![output_1](./img/o62 b.png)
+![output](./img/o62.png)
+![output](./img/o62 b.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -585,7 +585,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-![output_1](./img/o63.png)
+![output](./img/o63.png)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -628,7 +628,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ## OUTPUT
-![output_1](./img/o64.png)
+![output](./img/o64.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -706,7 +706,7 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
-![output_1](./img/o67.png)
+![output](./img/o67.png)
 # testing compound comparisons
 cat> ifcompound.sh 
 ```bash
@@ -721,7 +721,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![output_1](./img/o68.png)
+![output](./img/o68.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -742,7 +742,7 @@ $ chmod 755 casecheck.sh
 $ ./casecheck.sh 
  
  ## oUTPUT 
-![output_1](./img/o69.png)
+![output](./img/o69.png)
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -759,7 +759,7 @@ $ chmod 755 whiletest.sh
 $ ./whiletest.sh
  
 ## OUTPUT
-![output_1](./img/o70.png)
+![output](./img/o70.png)
 
 cat untiltest.sh 
 ```bash
@@ -775,7 +775,7 @@ $ chmod 755 untiltest.sh
 
 ## OUTPUT
 
-![output_1](./img/o70.png)
+![output](./img/o70.png)
  
 cat forin1.sh 
 ```bash
@@ -969,10 +969,10 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![output](./img/o82.png)
  
  ./funcex.sh 1 2
-
+![output](./img/o83.png)
  
 cat argshift.sh
 ```bash
@@ -987,6 +987,7 @@ $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
  
+![output](./img/o84.png)
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1003,8 +1004,13 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ \
+![output](./img/o85.png) 
+
 cat argshift.sh
+
+
+
 ```bash
 #!/bin/bash 
 set -x 
@@ -1017,7 +1023,8 @@ set +x
 ## OUTPUT
  ./argshift.sh 1 2 3
  
- 
+![output](./img/o86.png)  
+
 cat > nc.awk
 ```bash
 BEGIN{}
@@ -1047,7 +1054,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![output](./img/o87.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1074,7 +1081,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![output](./img/o88.png)
 
 # RESULT:
 The Commands are executed successfully.
