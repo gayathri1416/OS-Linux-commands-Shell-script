@@ -786,7 +786,6 @@ do
 echo The next state is $test
 done
  ```
- 
 $ chmod 755 forin1.sh
  
  ![output_1](./img/o72.png)
@@ -799,7 +798,6 @@ do
 echo “word:$test”
 done
  ```
- 
 $ chmod 755 forin2.sh
 
 ## OUTPUT
